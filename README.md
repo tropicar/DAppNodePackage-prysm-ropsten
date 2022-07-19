@@ -1,1 +1,1 @@
-# DAppNodePackage-prysm-sepolia-
+# DAppNodePackage-prysm-rospten-

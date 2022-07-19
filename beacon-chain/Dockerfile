@@ -7,7 +7,7 @@ ENV DOWNLOAD_URL https://github.com/prysmaticlabs/prysm/releases/download
 RUN DEBIAN_FRONTEND=noninteractive \
     apt update && apt install --assume-yes --no-install-recommends wget ca-certificates && \
     wget -q $DOWNLOAD_URL/$UPSTREAM_VERSION/beacon-chain-$UPSTREAM_VERSION-linux-${TARGETARCH:-amd64} -O /usr/local/bin/beacon-chain && \
-    wget -q https://github.com/eth-clients/merge-testnets/raw/main/sepolia/genesis.ssz -O /tmp/genesis.ssz && \
+    wget -q https://github.com/eth-clients/merge-testnets/blob/main/ropsten-beacon-chain/genesis.ssz?raw=true -O /tmp/genesis.ssz && \
     chmod +x  /usr/local/bin/beacon-chain
 
 # Copy entrypoint script

@@ -6,7 +6,7 @@ fi
 
 exec -c beacon-chain \
   --datadir=/data \
-  --sepolia \
+  --ropsten \
   --rpc-host=0.0.0.0 \
   --grpc-gateway-host=0.0.0.0 \
   --grpc-gateway-port=3500 \
@@ -18,5 +18,5 @@ exec -c beacon-chain \
   --accept-terms-of-use \
   --jwt-secret=/jwt.hex \
   --terminal-total-difficulty-override=$TTD_OVERRIDE \
-  --genesis-state=genesis.ssz \
+  --genesis-state=/genesis.ssz \
   $EXTRA_OPTS
