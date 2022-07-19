@@ -13,7 +13,7 @@ services:
       - "18514:18514/udp"
     restart: unless-stopped
     environment:
-      HTTP_WEB3PROVIDER: "http://ropsten-geth.dappnode:8551"
+      HTTP_WEB3PROVIDER: "http://ropsten.dappnode:8551"
       TTD_OVERRIDE: 50000000000000000
       CORSDOMAIN: "http://prysm-ropsten.dappnode"
       WEB3_BACKUP: ""
